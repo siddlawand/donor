@@ -1,16 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DLayout from "./layouts/DLayout";
+import DDashboard from "./pages/DDashboard";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <>
-      <h1>Vidya - Setu</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<DLayout />}>
+          <Route index element={<DDashboard />} />
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

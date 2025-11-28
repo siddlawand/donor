@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #FFFFFF;
+}
+/* Hide scrollbar FOR SIDEBAR ONLY */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.sidebar-scroll {
+  scrollbar-width: none !important;      /* Firefox */
+  -ms-overflow-style: none !important;   /* IE/Edge */
+}
